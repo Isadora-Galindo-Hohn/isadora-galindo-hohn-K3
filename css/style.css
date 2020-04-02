@@ -1,0 +1,155 @@
+body{
+  background: #a66cc2;
+  margin: 0%;
+  margin-bottom: 2%;
+}
+
+header{
+  background: lavender;
+  font-size: 30px;
+  margin: 0%;
+  text-align: center;
+  padding: 2%;
+  width: 100%;
+  position: fixed;
+  grid-row: 1/2;
+}
+
+#net{
+  display: grid;
+  grid-template-columns: 2fr 3fr 2fr;
+  grid-template-rows: 7rem auto;
+}
+
+#slut{
+  display: grid;
+  grid-template-columns: 2fr 3fr 2fr;
+  grid-row-gap: 15px;
+  grid-template-rows: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Helvetica, sans-serif;
+}
+
+p {
+  line-height: 1.5;
+}
+
+.q1,
+.q2,
+.q3,
+.q4,
+.q5 {
+  grid-column: 2/3;
+  text-align: center;
+}
+
+.q1{
+  grid-row: 2/3;
+}
+
+.q2{
+  grid-row: 3/4;
+}
+
+.q3{
+  grid-row: 4/5;
+}
+
+.q4{
+  grid-row: 5/6;
+}
+
+.q5{
+  grid-row: 6/7;
+}
+
+.question {
+  display: none;
+  margin: 4em auto;
+  width: 100%;
+  background-color: white;
+}
+
+.question:first-child {
+  display: block;
+  background-color: lightcyan;
+}
+
+.alternatives {
+  justify-content: center;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"] + label {
+  font-family: Helvetica, sans-serif;
+  display: block;
+  align-items: center;
+  padding: 1em;
+  margin: 1em;
+  border: 2px black solid;
+  transition: background-color 0.5s;
+}
+
+input[type="radio"] + label:hover {
+  background-color: black;
+  color: white;
+  transition: background-color 0.5s;
+}
+
+input[type="radio"]:checked + label {
+  background-color: lightskyblue;
+  color: black;
+  transition: background-color 0.5s;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-around;
+}
+
+button {
+  display: block;
+  border: 2px black solid;
+  padding: 1.5rem;
+  font-family: Helvetica, sans-serif;
+  box-shadow: none;
+  background-color: lavender;
+}
+
+button:hover {
+  background-color: lavenderblush;
+}
+
+button:disabled {
+  background-color: dimgray;
+  color: black;
+}
+
+button:disabled:hover {
+  background-color: dimgray;
+  color: black;
+}
+
+.controls{
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
+
+#resultat {
+  display: none;
+  border: 2px black solid;
+  padding: 2rem;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  background-color: lightcyan;
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/quiz.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vad ska du äta till middag?</title>
+</head>
+<body>
+
+    <header>Vad ska du äta till middag?</header>
+    
+    <section id="net">
+    <div class="q1">
+        <h1>Hur mycket tid har du på dig?</h1>  
+        <p class="alternatives">  
+            <input type="radio" name="q1" id="q1a" value="1">
+            <label for="q1a">Jag har hela dagen på mig</label>
+        </p>          
+        <p class="alternatives">
+            <input type="radio" name="q1" id="q1b" value="2">
+            <label for="q1b">Inte hela dagen men kanske efter middagen</label>
+        </p>   
+        <p class="alternatives"> 
+            <input type="radio" name="q1" id="q1c" value="3">
+            <label for="q1c">Nja, inte så lång tid 30 min kanske</label>
+        </p>
+        <p class="alternatives"> 
+            <input type="radio" name="q1" id="q1d" value="4">
+            <label for="q1d">Ingen tid, skynda det måste gå snabbt!</label>
+        </p>
+    </div>
+
+    <div class="q2">
+        <h1>Ska maten vara vegitarisk?</h1>  
+        <p class="alternatives">  
+            <input type="radio" name="q2" id="q2a" value="1">
+            <label for="q2a">Ja</label>
+        </p>          
+        <p class="alternatives">
+            <input type="radio" name="q2" id="q2b" value="2">
+            <label for="q2b">Nej</label>
+        </p>   
+        <p class="alternatives"> 
+            <input type="radio" name="q2" id="q2c" value="2">
+            <label for="q2c">Spelar ingen roll</label>
+        </p>
+    </div>
+                
+    <div class="q3">
+        <h1>Äter du ensam eller tillsammans med har du fin sälsklap?</h1>  
+        <p class="alternatives">
+            <input type="radio" name="q3" id="q3a" value="1">
+            <label for="q3a">Hela storfamiljen kommer</label>
+        </p>          
+        <p class="alternatives">
+            <input type="radio" name="q3" id="q3b" value="2">
+            <label for="q3b">Jag ska ha en fest</label>
+        </p>   
+        <p class="alternatives"> 
+            <input type="radio" name="q3" id="q3c" value="3">
+            <label for="q3c">Bara dom vanliga</label>
+        </p>
+        <p class="alternatives"> 
+            <input type="radio" name="q3" id="q3d" value="4">
+            <label for="q3d">Kan man räkna TV:n som sällskap?</label>
+        </p>
+    </div>
+    <div class="q4">
+        <h1>Vad tycker du om disk?</h1>  
+        <p class="alternatives">  
+            <input type="radio" name="q4" id="q4a" value="1">
+            <label for="q4a">Inga problem min partner/barn fixar det</label>
+        </p>          
+        <p class="alternatives">
+            <input type="radio" name="q4" id="q4b" value="2">
+            <label for="q4b">Det blir gjort</label>
+        </p>   
+        <p class="alternatives"> 
+            <input type="radio" name="q4" id="q4c" value="3">
+            <label for="q4c">Om jag kan undvika blir jag glad</label>
+        </p>
+        <p class="alternatives"> 
+            <input type="radio" name="q4" id="q4d" value="4">
+            <label for="q4d">INGEN DISK!!!</label>
+        </p>
+    </div>
+    <div class="q5">
+        <h1>Hur ser det ut med pengarna då?</h1>  
+        <p class="alternatives">  
+            <input type="radio" name="q5" id="q5a" value="1">
+            <label for="q5a">Inga klagomål här inte</label>
+        </p>          
+        <p class="alternatives">
+            <input type="radio" name="q5" id="q5b" value="2">
+            <label for="q5b">Som vanligt</label>
+        </p>   
+        <p class="alternatives"> 
+            <input type="radio" name="q5" id="q5c" value="3">
+            <label for="q5c">Lite tight men inte hemskt</label>
+        </p>
+        <p class="alternatives"> 
+            <input type="radio" name="q5" id="q5d" value="4">
+            <label for="q5d">Jag är bankrupt!</label>
+        </p>
+
+    </div>     
+    </section>
+
+    <div id="slut">
+        <div class="controls">
+            <button type="button" class="finish">Visa resultat</button>
+        </div>
+    
+        <div id="resultat">
+            <h2 id="svar1"></h2>
+                <p id="svarText1"></p>
+            <h2 id="svar2"></h2>
+                <p id="svarText2"></p>
+        </div>
+    </div>
+    
+</body>
+</html>
